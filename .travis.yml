@@ -22,6 +22,9 @@ matrix:
     - python: 3.5
       env: PANDAS_VERSION=0.18.1 NUMPY_VERSION=1.11.1 SCIPY_VERSION=0.17.1 LIBGFORTRAN_VERSION=3.0
 
+    - python: 3.5.2
+      env: PANDAS_VERSION=0.19.2 NUMPY_VERSION=1.12.1 SCIPY_VERSION=0.18.1 LIBGFORTRAN_VERSION=3.0
+
 before_install:
   # We do this conditionally because it saves us some downloading if the
   # version is the same.
@@ -55,3 +58,4 @@ notifications:
 branches:
   only:
     - master
+    - testversions
